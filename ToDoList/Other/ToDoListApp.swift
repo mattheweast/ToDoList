@@ -1,7 +1,7 @@
 import FirebaseCore
 import SwiftUI
 
-@main
+@main // This marks the entry point of the application
 struct ToDoListApp: App {
     init(){
         FirebaseApp.configure()
