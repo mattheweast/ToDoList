@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		953F06342E2FD05D00AF4163 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 953F06332E2FD05D00AF4163 /* FirebaseAuth */; };
+		953F06362E2FD05D00AF4163 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 953F06352E2FD05D00AF4163 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		953F06212E2FB67100AF4163 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953F06212E2FB67100AF4163 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ToDoList.app; path = "/Users/matteast/Documents/ToDoList/build/Debug-iphoneos/ToDoList.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953F06342E2FD05D00AF4163 /* FirebaseAuth in Frameworks */,
+				953F06362E2FD05D00AF4163 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,16 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				953F06232E2FB67100AF4163 /* ToDoList */,
-				953F06222E2FB67100AF4163 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		953F06222E2FB67100AF4163 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				953F06212E2FB67100AF4163 /* ToDoList.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +63,8 @@
 			);
 			name = ToDoList;
 			packageProductDependencies = (
+				953F06332E2FD05D00AF4163 /* FirebaseAuth */,
+				953F06352E2FD05D00AF4163 /* FirebaseFirestore */,
 			);
 			productName = ToDoList;
 			productReference = 953F06212E2FB67100AF4163 /* ToDoList.app */;
@@ -94,8 +94,11 @@
 			);
 			mainGroup = 953F06182E2FB67100AF4163;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				953F06322E2FD05D00AF4163 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 953F06222E2FB67100AF4163 /* Products */;
+			productRefGroup = 953F06182E2FB67100AF4163;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -255,11 +258,11 @@
 				DEVELOPMENT_TEAM = 5L7SU8DT2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +287,11 @@
 				DEVELOPMENT_TEAM = 5L7SU8DT2F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +327,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		953F06322E2FD05D00AF4163 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		953F06332E2FD05D00AF4163 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953F06322E2FD05D00AF4163 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		953F06352E2FD05D00AF4163 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953F06322E2FD05D00AF4163 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 953F06192E2FB67100AF4163 /* Project object */;
 }
