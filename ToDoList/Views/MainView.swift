@@ -5,6 +5,7 @@ struct MainView: View {
         NavigationView {
             LoginView()
         }
+
     }
 }
 
